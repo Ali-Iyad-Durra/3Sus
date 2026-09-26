@@ -28,7 +28,7 @@ speedboost/
 
 1. Open Chrome and go to `chrome://extensions`.
 2. Enable **Developer mode** (toggle, top-right).
-3. Click **Load unpacked** and select the `speedboost` folder.
+3. Click **Load unpacked** and select the `3sus` folder.
 4. Pin the extension to the toolbar (puzzle icon → pin).
 
 ### Verifying each feature
