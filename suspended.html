@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Suspended — 3Sus</title>
+  <style>
+    /* Deliberately inline & tiny: this page must cost almost nothing. */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; height: 100vh; display: flex;
+      align-items: center; justify-content: center;
+      background: #0f1117; color: #e8eaf2;
+      font: 16px/1.5 "Segoe UI", system-ui, sans-serif;
+      text-align: center;
+    }
+    .card { max-width: 420px; padding: 24px; }
+    .icon { font-size: 52px; }
+    h1 { font-size: 22px; font-weight: 600; margin: 12px 0 4px; }
+    p { color: #8a90a5; margin: 0 0 20px; }
+    .saved { color: #35d07f; font-weight: 600; }
+    button {
+      padding: 12px 28px; border: 0; border-radius: 12px;
+      background: #4f8cff; color: #fff; font-size: 15px; font-weight: 600;
+      cursor: pointer; transition: filter 0.15s;
+    }
+    button:hover { filter: brightness(1.1); }
+    .hint { font-size: 12px; color: #555b70; margin-top: 14px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon">💤</div>
+    <h1>Tab Suspended</h1>
+    <p>This tab was sleeping to save memory.<br />
+      <span class="saved" id="savedText">~110 MB RAM freed</span></p>
+    <button id="reload">Click to Reload</button>
+    <p class="hint">Your tab content is restored exactly where you left it.</p>
+  </main>
+  <script src="suspended.js"></script>
+</body>
+</html>

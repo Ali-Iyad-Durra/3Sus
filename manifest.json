@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "3Sus — Web Performance Booster",
+  "version": "1.0.0",
+  "description": "Suspends inactive tabs to free RAM, blocks heavy trackers/ads/autoplay media, and strips heavy CSS/animations from pages.",
+  "minimum_chrome_version": "121",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "scripting",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "3Sus"
+  },
+  "icons": {}
+}
